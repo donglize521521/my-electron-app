@@ -11,6 +11,11 @@ const createWindow = () => {
   });
 
   win.loadFile("index.html");
+
+  win.on('close', ()=> {
+    console.log('mainWin is closed')
+    mainWin = null
+  })
 };
 
 app.whenReady().then(() => {
