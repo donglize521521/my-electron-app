@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "hello world",
   "scripts": {
-    "start": "electron ."
+    "start": "nodemon --watch main.js --exec npm run build",
+    "build": "electron ."
   },
   "main": "main.js",
   "license": "MIT",
