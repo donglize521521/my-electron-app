@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>窗口尺寸</title>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>来自 Electron 渲染器的问好！</title>
   </head>
-  
   <body>
-    <h1>窗口尺寸</h1>
-    
+    <h1>来自 Electron 渲染器的问好！</h1>
+    <button id="btn">打开新窗口</button>
+    <!-- <script src="./renderer/index.js"></script> -->
+    <p>👋</p>
+    <p id="info"></p>
   </body>
+  <script src="./renderer.js"></script>
 </html>
